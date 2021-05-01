@@ -1,7 +1,10 @@
-name: Node CI
+yaml name: Docker CD
+name: Docker CD
 
-on: [push]
-
+on:
+  push:
+    paths:
+      - "**Dockerfile**"
 jobs:
   build:
     runs-on: ubuntu-latest
